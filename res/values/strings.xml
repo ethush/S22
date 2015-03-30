@@ -17,10 +17,9 @@
     <string name="login_option">Log in</string>
     <string name="ayuda">Help</string>
     <string name="title_activity_image_viewer">ImageViewer</string>
-    <string name="title_activity_info_screen">InfoViewer</string>
-    <string name="facebook_app_id">754727591277443</string>
-    <string name="app_id">754727591277443</string>
-    <string name="banner_ad_unit_id">ca-app-pub-9158809012320169/3895512332</string>
+    <string name="title_activity_info_screen">InfoViewer</string> 
+    <string name="app_id">YOUR FACEBOOK APP ID</string>
+    <string name="banner_ad_unit_id">YOU ADMOD KEY PROJECT</string>
     <string name="title_activity_facebook_login">FacebookLogin</string>
     <string name="siguiente_texto">siguiente</string>
     <string name="ir_a_texto">ir al sistema</string>
