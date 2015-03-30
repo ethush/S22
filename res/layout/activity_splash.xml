@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_map_vertical_margin"
+    android:paddingLeft="@dimen/activity_map_horizontal_margin"
+    android:paddingRight="@dimen/activity_map_horizontal_margin"
+    android:paddingTop="@dimen/activity_map_vertical_margin"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:gravity="center"    
+    tools:context="com.S22.bloqueo.Splash" >
+       
+       <ImageView
+       android:padding="20dp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:contentDescription="Splash Image"
+	    android:scaleType="fitXY"
+	    android:adjustViewBounds="true"
+	    android:src="@drawable/splash" />
+
+       <TextView
+           android:id="@+id/tittle"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="-20dp"
+           
+           android:text="@string/app_name_long"
+           android:textColor="#85BAB4"
+           android:textSize="25sp" />
+
+   		<TextView 
+   		    android:id="@+id/tittle_long"
+   		    android:textColor="#CA0044"
+   		    android:textSize="15sp"
+   		    android:text="@string/app_name_desc"
+   		    android:layout_width="wrap_content"
+   		    android:layout_height="wrap_content"
+   		    />
+</LinearLayout>

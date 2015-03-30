@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.S22.bloqueo"
+    android:versionCode="11"
+    android:versionName="1.5" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="21" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.S22.bloqueo.maps.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.s22.bloqueo.permission.MAP_RECEIVE" />
+
+    <!-- GCM requires a Google account. -->
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <permission
+        android:name="com.S22.bloqueo.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.S22.bloqueo.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!--
+             <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDW7o6PtgN7diuPJO5EWf9CrsiKfDqcb-Y" />
+        -->
+        <!-- Integracion con PushWoosh -->
+        <meta-data
+            android:name="PW_APPID"
+            android:value="D7E13-656DF" />
+        <meta-data
+            android:name="PW_PROJECT_ID"
+            android:value="A1019189581512" />
+
+        <!-- API de Google Maps -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyC091uVV22NrB5HGKI-rBByQufNKrQ2GYQ" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        
+        <meta-data
+     		android:name="com.google.android.gms.analytics.globalConfigResource"
+     		android:resource="@xml/tracker" />
+
+        <activity
+            android:name=".Splash"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.S22.bloqueo.MESSAGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TwitterLogin"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="twitterlogin"
+                    android:scheme="x-oauthflow-twitter" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainLogin"
+            android:label="@string/title_activity_main_login" >
+        </activity>
+        <activity
+            android:name=".MapActivity"
+            android:label="@string/title_activity_map" >
+        </activity>
+        <activity
+            android:name=".ImageViewer"
+            android:label="@string/title_activity_image_viewer"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".InfoScreen"
+            android:label="@string/title_activity_info_screen" >
+        </activity>
+        <activity
+            android:name=".FacebookLogin"
+            android:label="@string/title_activity_facebook_login" >
+        </activity>
+        <activity android:name="com.facebook.LoginActivity" >
+        </activity>
+        <activity
+            android:name=".SliderActivity"
+            android:label="@string/title_activity_slider" >
+        </activity>
+        <activity
+            android:name=".Galeria"
+            android:label="@string/title_activity_galeria" >
+        </activity>
+        
+        
+        <activity android:name="com.arellomobile.android.push.PushWebview" />
+        <activity android:name="com.arellomobile.android.push.MessageActivity" />
+        <activity android:name="com.arellomobile.android.push.PushHandlerActivity" />
+
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.S22.bloqueo" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.arellomobile.android.push.PushGCMIntentService" />
+
+        <receiver android:name="com.arellomobile.android.push.AlarmReceiver" />
+
+        <activity
+            android:name=".FAQActivity"
+            android:label="@string/title_activity_faq" >
+        </activity>
+        
+         <!--Include the AdActivity configChanges and theme. -->
+		<activity android:name="com.google.android.gms.ads.AdActivity"
+			android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+			android:theme="@android:style/Theme.Translucent" />
+    	</application>
+
+</manifest>

@@ -1,0 +1,31 @@
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_map_horizontal_margin"
+    android:paddingLeft="@dimen/activity_map_horizontal_margin"
+    android:paddingRight="@dimen/activity_map_horizontal_margin"
+    android:paddingTop="@dimen/activity_map_vertical_margin"
+    android:orientation="vertical"
+    android:screenOrientation="portrait"
+    tools:context="com.S22.bloqueo.MapActivity" >
+    
+     <fragment
+         android:id="@+id/mapa"
+         android:layout_width="wrap_content"
+         android:layout_height="0dp"
+         android:layout_weight="1"
+         class="com.google.android.gms.maps.MapFragment"
+         android:apiKey="AIzaSyDW7o6PtgN7diuPJO5EWf9CrsiKfDqcb-Y" />
+     
+      <com.google.android.gms.ads.AdView 
+          android:id="@+id/adView"
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          ads:adUnitId="@string/banner_ad_unit_id"
+          ads:adSize="BANNER"/>
+     
+
+</LinearLayout>

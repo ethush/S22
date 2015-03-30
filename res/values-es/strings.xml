@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">S22</string>
+    <string name="app_name_long">Sistema 22</string>
+    <string name="app_name_desc">Mi Bloqueo Diario</string>
+    <string name="hello_world">(Nada para mostrar)</string>
+    
+    <string name="title_activity_main_login">Inicio de sesion</string>
+    <string name="title_activity_map">S22 / Mi Bloqueo Diario</string>
+    <string name="main_login_button_twitter">Iniciar sesión con Twitter</string>
+    
+    <string name="main_login_button_no">Sin redes sociales</string>
+    <string name="tuit_info">Tuit!</string>
+    <string name="fb_info">FB!</string>
+    <string name="galeria_info">Galeria</string>
+    <string name="logout_option">Cerrar Sesión</string>
+    <string name="login_option">Iniciar Sesión</string>
+    <string name="ayuda">Ayuda</string>
+    
+    <string name="title_activity_image_viewer">ImageViewer</string>
+    <string name="title_activity_info_screen">InfoViewer</string>
+    
+    <string name="facebook_app_id">754727591277443</string>
+    <string name="app_id">754727591277443</string>
+    
+    <string name="title_activity_facebook_login">FacebookLogin</string>
+    
+    <string name="siguiente_texto" >siguiente</string>
+    <string name="ir_a_texto" >ir al sistema</string>
+    <string name="faq">FAQ</string>
+    
+    <string name="texto">¿Es tu primera vez en el sistema? \n Aquí te explicamos de que se trata ;)</string>
+    
+   <string name="p_1">Los bloqueos pueden ser por múltiples motivos, sin embargo algo es seguro, no podrás pasar por ahí, no mientras este en rojo ¿a qué nos referimos? muy fácil:</string>
+    <string name="p_2">Si ves el rojo está bloqueado y no podrás pasar, te sugerimos que tomes rutas alternas.</string>
+    <string name="p_3">Si está en amarillo toma tus precauciones, es muy probable que algo se esté organizando o si nos has seguido, hubo un bloqueo y ahora está por concluir.</string>
+    <string name="p_4">Verde, esto quiere decir que hubo un bloqueo y ahora por fin está libre, te deseamos que llegues con bien a tu destino.</string>
+    <string name="p_5">Este es el peor de todos ¬¬° en el sistema este color es para avisarte que pasa algo grave, que puede ser violencia, incendio, etc., algún evento que pueda dañar a terceros, así que cuando lo veas es mejor que pongas distancia de por medio.</string>
+    <string name="p_6">Los bloqueos pueden ser por múltiples motivos, nosotros tenemos toda la intención de ayudarte para que llegues a tu destino, con los tuyos que te esperan y de paso te ahorramos un poco de gasolina que seguramente gastaras en un embotellamiento de horas.</string>
+    <string name="p_7">¿Te gustaría ayudar? puedes twittear a @s22mibloqueo y nosotros lo pondremos en el sistema dándote el crédito de ello :)</string>
+    
+    <string name="title_activity_slide_view">SlideViewActivity</string>
+    <string name="title_activity_slider">SliderActivity</string>
+    <string name="title_activity_faq">Preguntas Frecuentes</string>
+    
+    <string name="title_activity_galeria">Galeria</string>
+</resources>

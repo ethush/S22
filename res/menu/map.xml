@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.S22.bloqueo.MapActivity" >
+		<item 
+	    	android:id="@+id/ayuda"
+	        android:orderInCategory="100"
+	        android:title="@string/ayuda"
+        	/>
+		<item
+		    android:id="@+id/faq"
+		    android:orderInCategory="100"
+		    android:title="@string/faq"
+		    />
+</menu>

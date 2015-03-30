@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="HardcodedText">
+        <ignore path="res/layout/activity_map.xml" />
+        <ignore path="res/layout/activity_splash.xml" />
+    </issue>
+    <issue id="ObsoleteLayoutParam">
+        <ignore path="res/layout/activity_map.xml" />
+    </issue>
+</lint>

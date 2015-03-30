@@ -1,0 +1,125 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_map_vertical_margin"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="@dimen/activity_map_vertical_margin"
+    android:scrollbarStyle="insideOverlay"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context="${relativePackage}.${activityClass}" >
+	
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+	    
+    <ImageView
+       	android:padding="20dp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:maxHeight="82dp"
+	    android:maxWidth="94dp"
+	    android:contentDescription="@string/app_name"
+	    android:layout_gravity="center"
+	    
+	    android:adjustViewBounds="true"
+	    android:src="@drawable/splash" />
+
+       <TextView
+           android:id="@+id/tittle_info"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="-20dp"
+           android:layout_gravity="center"
+           android:text="@string/app_name_long"
+           android:textColor="#85BAB4"
+           android:textSize="15sp" />
+
+   		<TextView 
+   		    android:id="@+id/tittle_long_info"
+   		    android:textColor="#CA0044"
+   		    android:textSize="12sp"
+   		    android:layout_gravity="center"
+   		    android:text="@string/title_activity_map"
+   		    android:layout_width="wrap_content"
+   		    android:layout_height="wrap_content"
+   		    />
+   		
+   		
+   		
+   		<!-- Parrafos de texto a partir de aqui -->
+   		
+   		
+   		<TextView
+   		     android:id="@+id/p_1_info"
+   		     android:paddingTop="10dp"
+   		     android:layout_width="wrap_content"
+   		     android:layout_height="wrap_content"
+   		     android:textColor="#427D73"
+   		     android:textSize="16sp"
+   		     android:text="@string/p_1"
+   		    />
+   		
+  	    <TextView
+		     android:id="@+id/p_2_info"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:textColor="#427D73"
+		     android:paddingTop="5dp"
+		     android:textSize="16sp"
+		     android:text="@string/p_2"
+		     android:drawableLeft="@drawable/rojo_pin"
+   		/>
+  	    <TextView
+		     android:id="@+id/p_3_info"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:textColor="#427D73"
+		     android:textSize="16sp"
+		     android:text="@string/p_3"
+		     android:drawableLeft="@drawable/amarillo_pin"
+   		/>
+  	    <TextView
+		     android:id="@+id/p_4_info"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:textColor="#427D73"
+		     android:textSize="16sp"
+		     android:text="@string/p_4"
+		     android:drawableLeft="@drawable/verde_pin"
+   		/>
+  	    <TextView
+		     android:id="@+id/p_5_info"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:textColor="#427D73"
+		     android:textSize="16sp"
+		     android:text="@string/p_5"
+		     android:drawableLeft="@drawable/morado_pin"
+   		/>
+   		    
+  	    
+  	    <TextView
+   		     android:id="@+id/p_6_info"
+   		     android:paddingTop="10dp"
+   		     android:layout_width="wrap_content"
+   		     android:layout_height="wrap_content"
+   		     android:textColor="#427D73"
+   		     android:textSize="16sp"
+   		     android:text="@string/p_6"
+   		    />
+  	    
+  	    <TextView
+   		     android:id="@+id/p_7_info"
+   		     android:paddingTop="10dp"
+   		     android:layout_width="wrap_content"
+   		     android:layout_height="wrap_content"
+   		     android:textColor="#427D73"
+   		     android:textSize="16sp"
+   		     android:text="@string/p_7"
+   		    />
+  	    </LinearLayout>
+</ScrollView>
