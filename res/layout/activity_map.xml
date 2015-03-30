@@ -18,7 +18,7 @@
          android:layout_height="0dp"
          android:layout_weight="1"
          class="com.google.android.gms.maps.MapFragment"
-         android:apiKey="AIzaSyDW7o6PtgN7diuPJO5EWf9CrsiKfDqcb-Y" />
+         android:apiKey="YOUR GOOGLE MAPS KEY" />
      
       <com.google.android.gms.ads.AdView 
           android:id="@+id/adView"
