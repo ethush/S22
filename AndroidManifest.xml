@@ -45,20 +45,24 @@
         <!--
              <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
-            android:value="AIzaSyDW7o6PtgN7diuPJO5EWf9CrsiKfDqcb-Y" />
+            android:value="AIzaSyDW7o6PtgN7diuPJO5EWf9CrsiKfDqcb-Y" />
+
+
+
+
         -->
         <!-- Integracion con PushWoosh -->
         <meta-data
             android:name="PW_APPID"
-            android:value="D7E13-656DF" />
+            android:value="YOUR APP ID OF PUSHWOOSH" />
         <meta-data
             android:name="PW_PROJECT_ID"
-            android:value="A1019189581512" />
+            android:value="YOUR PROJECT ID OF PUSHWOOSH" />
 
         <!-- API de Google Maps -->
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
-            android:value="AIzaSyC091uVV22NrB5HGKI-rBByQufNKrQ2GYQ" />
+            android:value="YOUR GOOGLE MAPS API KEY HERE" />
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/app_id" />
